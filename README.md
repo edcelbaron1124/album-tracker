@@ -1,23 +1,107 @@
-# React + Vite
+Album Tracker
 
-## AI recommendations
+Album Tracker is a web application built with React that allows users to search for music albums, explore album information, listen to available audio previews, and manage their personal album collection. It integrates music data from the iTunes API and Deezer, while also providing AI-powered music recommendations using Google's Gemini API. The application is built with Vite and deployed through Vercel.
 
-AI recommendations require a Gemini API key. Add `GEMINI_API_KEY=your-key` to
-`.env.local` in the project root, then restart the development server. The key
-is used by the server-side `/api/recommend` endpoint and should not use a
-`VITE_` prefix.
+Live Application: https://album-tracker-gold.vercel.app?_vercel_share=H2BAgblicxQwLaP7jOeVydZzPYqdf9no
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Website: https://album-tracker-orvwewzq8-edcelbaron.vercel.app/
 
-Currently, two official plugins are available:
+Project Screenshot:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<img width="1919" height="985" alt="image" src="https://github.com/user-attachments/assets/e93f86e4-9ae8-4351-9422-5c4bd41abc12" />
 
-## React Compiler
+Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Album Search – Search for music albums and discover available album information.
 
-## Expanding the ESLint configuration
+Album Details – View information about selected albums.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Audio Previews – Listen to available 30-second music previews.
+
+Personal Collection – Save and manage albums in your personal collection.
+
+Local Storage – Keep saved albums in the browser using local storage.
+
+Deezer Integration – Access additional music playback options through Deezer.
+
+AI Recommendations – Generate music recommendations using Google's Gemini API.
+
+Responsive Interface – Browse and use the application through a web interface.
+
+Tech Stack
+
+React – Frontend library for building the user interface.
+
+Vite – Development server and build tool.
+
+Context API – State management across application components.
+
+iTunes API – Provides album information and audio previews.
+
+Deezer – Additional music integration and playback functionality.
+
+Google Gemini API – Powers AI-generated music recommendations.
+
+Vercel – Application deployment and hosting.
+
+How to Run Locally
+
+Prerequisites
+
+Node.js and npm installed.
+
+Git installed.
+
+A Gemini API key for AI recommendations.
+
+1. Clone the Repository
+
+git clone https://github.com/YOUR-USERNAME/album-tracker.git
+
+2. Open the Project Folder
+
+cd album-tracker
+
+3. Install Dependencies
+
+npm install
+
+4. Create the Environment File
+
+Create a file named .env.local in the root project directory.
+
+Add your Gemini API key:
+
+Replace your_gemini_api_key_here with your actual API key.
+
+5. Start the Development Server
+
+npm run dev
+
+Open the local URL displayed in your terminal, usually:
+
+http://localhost:5173
+
+Limitations
+
+30-Second Previews: Audio previews provided through the iTunes API are limited to approximately 30 seconds.
+
+Browser-Based Collection: Saved albums are stored locally in the user's browser. They are not automatically synchronized across different devices or browsers.
+
+Deezer Login: Full-track playback through Deezer may require users to log in to their Deezer account.
+
+Internet Connection: The application requires an internet connection to retrieve music information and access external API services.
+
+AI Recommendations: AI-generated recommendations depend on the availability of the Gemini API and a valid API key.
+
+Privacy Note
+
+The AI recommendation feature uses Google's Gemini API to process information needed to generate music recommendations. Information sent to the AI service is subject to Google's applicable privacy policies and terms. Users should avoid entering personal or sensitive information into the application.
+
+The Gemini API key is configured through environment variables and should never be exposed in publicly accessible frontend code or committed to the repository.
+
+Disclaimer
+
+Album Tracker is an independent academic project developed for educational purposes. It is not affiliated with, endorsed by, or officially connected to Apple, Spotify, Deezer, or Google.
+
+All trademarks, product names, and services mentioned belong to their respective owners.
