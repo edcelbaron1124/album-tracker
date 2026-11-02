@@ -56,7 +56,7 @@ A Gemini API key for AI recommendations.
 
 1. Clone the Repository
 
-git clone https://github.com/YOUR-USERNAME/album-tracker.git
+git clone https://github.com/edcelbaron1124/album-tracker.git
 
 2. Open the Project Folder
 
